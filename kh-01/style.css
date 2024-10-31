@@ -173,6 +173,7 @@ body {
 .io-home-user-review-area .io-home-user-review-always-show-area {
   display: flex;
   gap: 70px;
+  margin-bottom: 63px;
 }
 .io-home-user-review-area .io-home-user-review-card {
   background-color: var(--white-color);
@@ -222,7 +223,6 @@ body {
 .io-home-user-review-area .io-home-user-review-card-area {
   display: flex;
   flex-direction: column;
-  gap: 63px;
 }
 .io-home-user-review-area .io-home-user-review-card-details p {
   font-size: 18px;
@@ -240,12 +240,18 @@ body {
 }
 /* io-home-user-review-area end */
 .io-home-user-review-area .io-home-user-review-hidden-area {
-  display: none;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.25s ease-in-out;
+  /* opacity: 0; */
 }
 .io-home-user-review-area .io-home-user-review-hidden-area.__show {
-  display: grid;
+  max-height: calc(300vh);
+  /* opacity: 1; */
+  margin-bottom: 63px;
 }
 .io-home-user-review-area .io-home-user-review-toggle-btn {
   margin: 0 auto;
