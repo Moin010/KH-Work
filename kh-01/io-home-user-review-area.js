@@ -1,8 +1,8 @@
 const reviewAreaBTN = document.querySelector(
-  ".io-home-user-review-area .io-home-user-review-toggle-btn button"
+  ".io-user-review-area .review-toggle-btn button"
 );
 const hiddenReviewArea = document.querySelector(
-  ".io-home-user-review-area .io-home-user-review-hidden-area"
+  ".io-user-review-area .review-hidden-area"
 );
 
 reviewAreaBTN.addEventListener("click", () => {
