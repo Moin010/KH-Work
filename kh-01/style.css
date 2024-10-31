@@ -266,6 +266,25 @@ body {
   font-weight: 600;
   line-height: 25.2px;
 }
+.io-home-user-review-area
+  .io-home-user-review-card-area:has(.__show)
+  .io-home-user-review-toggle-btn
+  span:first-child {
+  display: none;
+}
+.io-home-user-review-area
+  .io-home-user-review-card-area
+  .io-home-user-review-toggle-btn
+  span:last-child {
+  display: none;
+}
+.io-home-user-review-area
+  .io-home-user-review-card-area:has(.__show)
+  .io-home-user-review-toggle-btn
+  span:last-child {
+  display: block;
+}
+
 @media screen and (max-width: 900px) {
   .io-home-user-review-area .io-home-user-review-img-and-info-area {
     flex-direction: column;
