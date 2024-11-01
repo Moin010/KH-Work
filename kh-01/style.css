@@ -331,6 +331,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 .io-slider-wrapper .slider-content {
   max-width: 1000px;
@@ -420,6 +421,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .io-slider-wrapper .slider-content {
+    flex-direction: column;
     max-width: 200px;
     max-height: none;
     background-color: var(--light-indigo-color);
@@ -433,6 +435,9 @@ body {
     border-bottom-right-radius: 0px;
     margin-top: 30px;
     border-bottom-right-radius: 16px;
+  }
+  .io-Einrichtung-slider .slider-card:first-of-type.__active {
+    margin-top: 0px;
   }
   .io-slider-wrapper .slider-card.__active .slider-card-img {
     margin-top: -50px;
@@ -461,4 +466,156 @@ body {
     gap: 20px;
   }
 }
+
 /* io-slider-wrapper end */
+
+/* io-tab-wrapper start */
+
+.io-tab-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--light-paste-color);
+}
+.io-tab-wrapper .area-header h3 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 72.8px;
+  text-align: center;
+  color: var(--black-color);
+}
+.io-tab-wrapper .area-info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: center;
+  color: var(--black-color);
+}
+.io-tab-wrapper .tab-area {
+  margin: 0 auto;
+  display: flex;
+  background-color: var(--light-blue-color);
+  justify-content: center;
+  max-height: 32px;
+  border-radius: 60px;
+  max-width: max-content;
+}
+.io-tab-wrapper .tab-area .tablinks {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  max-height: 32px;
+  padding: 4px 30px;
+  border: none;
+  background-color: var(--light-blue-color);
+}
+.io-tab-wrapper .tab-area .tablinks.active {
+  border-radius: 60px;
+  background-color: var(--primary-blue-color);
+}
+.io-tab-wrapper .tab-area .tablinks p {
+  color: var(--fff-white);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: center;
+}
+.io-tab-wrapper .tab-area .tablinks:first-of-type {
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+.io-tab-wrapper .tab-area .tablinks:last-of-type {
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+.io-tab-wrapper .tabcontent {
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  margin: 40px 0px;
+}
+.io-tab-wrapper .tabcontent.__show {
+  display: flex;
+}
+.io-tab-wrapper .tab-content-img {
+  flex: 0 0 33%;
+}
+
+.io-tab-wrapper .details-header h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33.6px;
+  text-align: center;
+  color: var(--black-color);
+}
+.io-tab-wrapper .details-info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25.2px;
+  text-align: center;
+  color: var(--black-color);
+}
+.io-tab-wrapper .tab-content-details.no-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.io-tab-wrapper .tab-content-details {
+  width: 100%;
+  display: flex;
+  align-items: self-start;
+  gap: 30px;
+}
+.io-tab-wrapper .tab-options-area {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 100%;
+  justify-content: flex-start;
+}
+.io-tab-wrapper .tab-options {
+  display: flex;
+  gap: 20px;
+}
+.io-tab-wrapper .tab-options p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25.2px;
+  text-align: left;
+  color: var(--light-black-color);
+}
+@media screen and (max-width: 900px) {
+  .io-tab-wrapper .tabcontent {
+    flex-direction: column;
+  }
+  .io-tab-wrapper .tab-content-details {
+    flex-direction: column;
+    align-items: center;
+    max-width: max-content;
+    gap: 40px;
+  }
+  .io-tab-wrapper .tab-options-area {
+    /* width: 48%; */
+    gap: 40px;
+  }
+  .io-tab-wrapper .tab-options img {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .io-tab-wrapper .tab-area .tablinks p {
+    display: none;
+  }
+  .io-tab-wrapper .tab-area .tablinks {
+    padding: 4px 20px;
+  }
+  .io-tab-wrapper .tab-area .tablinks.active p {
+    display: block;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+}
+/* io-tab-wrapper end*/
